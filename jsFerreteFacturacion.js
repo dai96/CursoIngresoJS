@@ -3,6 +3,8 @@ A.	Ingresar tres precios de productos y mostrar la suma de los mismos.
 B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
 C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
+
+/*lo tengo corregido en la carpeta correspondiente*/
 function Sumar () 
 {
 	var product1;
@@ -18,7 +20,7 @@ function Sumar ()
 	alert("La suma de los productos es: "+resultadosum);
 
 
-
+/*acá no me daba porque no habia hecho el parseint, este error lo arrastro al resto de columnas*/
 	
 }
 function Promedio () 
@@ -50,6 +52,8 @@ function PrecioFinal ()
 	product3=document.getElementById('PrecioTres').value;
 	resultadoiba=product1+product2+product3;
 	ibafinal=resultadoiba*0.21;
-
+/*aca tenia que hacer la operacion por 1.21*/
 	alert("El iba de los productos es: "+ibafinal);
+
+
 }
