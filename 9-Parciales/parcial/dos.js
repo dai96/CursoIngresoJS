@@ -5,9 +5,10 @@ function Mostrar()
   var impfinal;
 
   importe=prompt("importe de producto");
-  impfinal=importe*0.21;
+  importe=parseInt(importe);
+  impfinal=importe*1.21;
   document.getElementById('importeFinal').value=impfinal;
-
+/* No va a funcionar si no utilizamos el parseInt*/
 
 
 }
