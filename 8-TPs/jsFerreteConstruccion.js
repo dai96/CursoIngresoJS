@@ -6,44 +6,55 @@ C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de c
 
 function Rectangulo () 
 {
-var largo;
-var ancho;
-var alambreacomprar;
-var resultado;
+	var largo;
+	var ancho;
+	var alambreAComprar;
+	var resultado;
 
-largo=document.getElementById('Largo').value;
-ancho=document.getElementById('ancho').value;
-alambreacomprar=largo*ancho;
-resultado=alambreacomprar*3;
+	largo=document.getElementById('Largo').value;
+	ancho=document.getElementById('Ancho').value;
 
-alert("La cantidad de alambre a comprar es "+resultado);
+	largo=parseInt(largo);
+	ancho=parseInt(ancho);
+	
+	alambreAComprar=largo*2+ancho*2;
+	resultado=alambreAComprar*3;
+
+	alert("La cantidad de alambre a comprar es "+resultado);
 
 
 
 }
 function Circulo () 
 {
-var radio;
-var resulcirculo;
+	var radio;
+	var resultado;
 
-radio=document.getElementById('radio').value;
-resulcirculo=radio*3;
+	radio=document.getElementById('Radio').value;
+	
+	resultado=radio*3;
 
-alert("La cantidad de alambre a comprar"+resulcirculo);
+	alert("La cantidad de alambre a comprar "+resultado);
 
 }
 function Materiales () 
 {
-var largo;
-var ancho;
-var terreno;
-var cemento;
-var cal;
+	var largo;
+	var ancho;
+	var terreno;
+	var cemento;
+	var cal;
 
-largo=document.getElementById('Largo').value;
-ancho=document.getElementById('ancho').value;
-terreno=largo*ancho;
-cemento=terreno*2;
-cal=terreno*3;
+	largo=document.getElementById('Largo').value;
+	ancho=document.getElementById('Ancho').value;
 
-alert("Para hacer el contrapiso necesitás "+cemento+" bolsas de cemento y "+cal+" bolsas de cal");
+	largo=parseInt(largo);
+	ancho=parseInt(ancho);
+
+	terreno=largo*2+ancho*2;
+
+	cemento=terreno*2;
+	cal=terreno*3;
+
+	alert("Para hacer el contrapiso necesitás "+cemento+" bolsas de cemento y "+cal+" bolsas de cal");
+}
