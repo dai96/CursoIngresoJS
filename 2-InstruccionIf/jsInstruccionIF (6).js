@@ -5,9 +5,31 @@ function Mostrar()
 
 	edad=document.getElementById('edad').value;
 
-	if (edad>17)
+	if (edad<13)
 	{
-		alert("Sos un Adulto");
+		alert("Es un niño");
+	}
+	else
+	{
+		if(edad>17)
+		{
+			alert("Adulto");
+		}
+		else
+		{
+			alert("Adolescente");
+		}
+
+	}
+		
+
+
+
+
+
+	/*if (edad>17)
+	{
+		alert("Sos un niño");
 
 	}
 	if(edad>12 && edad<18)
@@ -18,7 +40,7 @@ function Mostrar()
 	if(edad<13)
 	{
 			alert("Sos un niño");
-	}
+	}*/
 
 
 }//FIN DE LA FUNCIÓN
