@@ -2,6 +2,9 @@ function Mostrar()
 {
 var numeroUno;
 var numeroDos;
+var suma;
+var resta;
+var multi;
 
 numeroUno=prompt("Numero uno");
 numeroDos=prompt("Numero dos");
@@ -9,30 +12,34 @@ numeroDos=prompt("Numero dos");
 numeroUno=parseInt(numeroUno);
 numeroDos=parseInt(numeroDos);
 
-if (numeroUno=numeroDos)
+
+
+if (numeroUno<numeroDos)
 {
-	var multi;
+	
 
-	multi=numeroUno*numeroDos;
+	suma=numeroUno+numeroDos;
 
-	alert (multi);
-
-	if (numeroUno>numeroDos)
+	alert (suma);
+}
+else
+{	
+	if (numeroUno==numeroDos)
 	{
-		var resta
+		
+
+		multi=numeroUno*numeroDos;
+
+		alert (multi);
+
+	}
+	else 
+	{
+		
 
 		resta=numeroUno-numeroDos;
 
-		alert(resta);
-
-		else 
-		{
-			var suma
-
-			suma=numeroUno+numeroDos;
-
-			alert(suma);
-		}
+		alert (resta);
 	}
 }
 }
