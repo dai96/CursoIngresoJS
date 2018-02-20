@@ -25,9 +25,9 @@ function Mostrar()
 		}
 	}*/
 
-	if (suma==0)
+	if (suma<=-1)
 	{
-		alert("cero");
+		alert("negativo");
 	}
 	else
 	{
@@ -37,6 +37,7 @@ function Mostrar()
 		}
 		else
 		{
-			alert("negativo");/* no funciona :C*/
-
+			alert("cero");/* no funciona :C*/
+		}
+	}
 }
