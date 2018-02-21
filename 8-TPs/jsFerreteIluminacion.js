@@ -30,21 +30,28 @@ de ingresos brutos en informar del impuesto con el siguiente mensaje: ”IIBB Us
 
  	switch (lampara)
  	{
- 		case "ArgentinaLuz"
- 		if (cantidad==5)
- 		{
- 			descuento=35*0.40;
- 		}
- 		else 
- 		{
+ 		case "ArgentinaLuz":
+ 			if (cantidad==5)
+ 			{
+ 				descuento=35*0.40;
+ 			}
+ 			else 
+ 			{
+ 				if (cantidad==4)
+ 				{
+ 					descuento=35*0.25;
+ 				}
+ 				else if(cantidad==3)
+ 				{
+ 					descuento=35*0.15;
+ 				}
+ 			}
+ 			break;
+ 		case "FelipeLamparas":
  			if (cantidad==4)
  			{
- 				descuento=35*0.20;
+ 				descuento=35*0.25
  			}
- 			else
- 			{
- 				if()
- 			}
- 		}
- 	}
+ 	}		
+
 }	
