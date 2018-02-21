@@ -10,33 +10,46 @@ function Mostrar()
 	
 	var respuesta='si';
 
-	while(respuesta!='no')
+	while(respuesta=='si')
 	{
-		contado++;
-		numero=prompt
-		numero=parseint
+		contador++;
+		numero=prompt("Ingrese un número");
+		numero=parseInt(numero);
+		respuesta=prompt("si quiere seguir ingresando números, ponga si");
+
 		if (contador==1)
-			maximo=bumnero;
+		{
+			maximo=numero;
 			minimo=numero;
+		}
 		else
+		{
 			if(numero>maximo)
+			{
 				maximo=numero;
-			else NOOOOO
-			IF (NUMERO<MINUMI)
+			}
+			if (numero<minimo) 
+			{
+				(numero<minimo)
 				minimo=numero;
+			}
+		}
+	}
+
+	document.getElementById('maximo').value=maximo;
+	document.getElementById('minimo').value=minimo;
 
 
 
-
-	var bandera=true 1 "no paso"		
+	/*var bandera=true 1 "no paso"		
 	
 	if (bandera==no paso)
 	maximo=numero
 	minumo=numero
-	badera=false 0 "ya paso"	
+	badera=false 0 "ya paso"*/	
 
 	
-	}
+	
 
 
 
