@@ -12,18 +12,6 @@ function CalcularPrecio ()
 {
 
 
-	Las lámparas están al mismo precio de $35 pesos final. 
-A.	Si compra 6 o más lamparitas bajo consumo tiene un descuento del 50%. 
-B.	Si compra 5 lamparitas bajo consumo marca "ArgentinaLuz" se hace un descuento del 40 % 
-y si es de otra marca el descuento es del 30%. 
-C.	Si compra 4 lamparitas bajo consumo marca "ArgentinaLuz" o “FelipeLamparas” se hace un descuento del 25 % 
-y si es de otra marca el descuento es del 20%. 
-D.	Si compra 3 lamparitas bajo consumo marca "ArgentinaLuz" el descuento es del 15%,
- si es “FelipeLamparas” se hace un descuento del 10 % y si es de otra marca un 5%. 
-E.	Si el importe final con descuento suma más de $120 se debe sumar un 10% 
-de ingresos brutos en informar del impuesto con el siguiente mensaje: ”IIBB Usted pago X”, siendo X el impuesto que se pagó
-
-
  	var lampara;
  	var cantidad;
  	var descuento;
@@ -31,6 +19,10 @@ de ingresos brutos en informar del impuesto con el siguiente mensaje: ”IIBB Us
  	switch (lampara)
  	{
  		case "ArgentinaLuz":
+ 			if (cantidad>5)
+ 			{
+ 				descuento=35*0.50;
+			}
  			if (cantidad==5)
  			{
  				descuento=35*0.40;
@@ -44,14 +36,51 @@ de ingresos brutos en informar del impuesto con el siguiente mensaje: ”IIBB Us
  				else if(cantidad==3)
  				{
  					descuento=35*0.15;
- 				}
+ 				}	
  			}
+ 			document.getElementById('precioDescuento').value=descuento;
  			break;
  		case "FelipeLamparas":
+ 			if (cantidad>5)
+ 			{
+ 				descuento=35*0.50;
+			}
  			if (cantidad==4)
  			{
- 				descuento=35*0.25
+ 				descuento=35*0.25;
  			}
- 	}		
+ 			if (cantidad==3) 
+ 			{
+ 				descuento=35*0.10;
+ 			}
+ 			document.getElementById('precioDescuento').value=descuento;
+ 			break;
+ 		default:
+ 			if (cantidad>5)
+ 			{
+ 				descuento=35*0.50;
+			}
+			if (cantidad==5)
+			{
+				descuento=35*0.30;
+			}
+			if (cantidad==4) 
+			{
+				descuento=35*0.20;
+			}
+			if (cantidad==3)
+			{
+				descuento=35*0.05
+			}
+			document.getElementById('precioDescuento').value=descuento;
+			break;
+	}	
+	if (descuento>119)
+	{
+		descuento+0.10;
+		document.getElementById('precioDescuento').value=("IIBB Usted pagó "+descuento);
+	}
+
+
 
 }	
