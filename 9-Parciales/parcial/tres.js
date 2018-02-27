@@ -1,5 +1,13 @@
 function Mostrar()
 {
+	//
+
+
+
+
+
+
+
 	/*var largo
 	var ancho
 	var perimetro
@@ -13,7 +21,7 @@ function Mostrar()
 
 	alert("Se necesitan "+alambre+" Metros de alambre");*/
 
-	var largo;
+	/*var largo;
 	var ancho;
 	var perimetro;
 	var alambreFinal;
@@ -28,7 +36,7 @@ function Mostrar()
 
 	alambreFinal=perimetro*3;
 
-	alert("Necesita "+alambreFinal+" metros de alambre.");
+	alert("Necesita "+alambreFinal+" metros de alambre.");*/
 	
 
 }

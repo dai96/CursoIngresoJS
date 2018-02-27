@@ -1,5 +1,65 @@
 function Mostrar()
 {
+
+	//Ingreso 3 numero sacar promedio. AVERIGUAR NUMERO DEL MEDIO
+
+	var numeroUno;
+	var numeroDos;
+	var numeroTres;
+	var numeromayor=0;
+	var numeromenor=3;
+	
+	
+
+	numeroUno=prompt("Ingrese un número");
+	numeroDos=prompt("Ingrese otro número");
+	numeroTres=prompt("Ingrese un número más");
+
+	numeroUno=parseInt(numeroUno);
+	numeroDos=parseInt(numeroDos);
+	numeroTres=parseInt(numeroTres);
+
+	if (numeromayor<numeroUno)
+	{
+			numeromayor=numeroUno;
+
+
+		if (numeromayor<numeroDos)
+		{
+			
+			if (numeromayor<numeroTres)
+			{
+				numeromayor=numeroTres;
+			}
+			else
+			{
+			numeromayor=numeroDos;
+			}	
+		}
+
+	}	
+	if (numeromenor>numeroUno)
+	{
+			numeromenor=numeroUno;
+		if (numeromenor>numeroDos)
+		{
+			if (numeromenor>numeroTres)
+			{
+				numeromenor=numeroTres;
+			}
+			else
+			{
+				numeromenor=numeroDos;
+			}
+		}	
+
+	}
+
+	
+	alert("El número mayor es "+numeromayor+" y el menor "+numeromenor);
+
+}
+
 /*var numeroUno;
 var numeroDos;
 var suma;
@@ -43,7 +103,7 @@ else
 	}
 }*/
 
-	var numeroUno;
+	/*var numeroUno;
 	var numeroDos;
 	var multipli;
 	var resta;
@@ -75,6 +135,6 @@ else
 			document.write("El resultado de su suma es de "+suma);
 
 		}
-	}
+	}*/
 	
-}
+

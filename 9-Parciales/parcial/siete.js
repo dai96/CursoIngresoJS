@@ -1,9 +1,87 @@
 function Mostrar()
 {
+//pedir hasta que el cliente quiera un letra valido que sea una letra 
+// y un numero entre -200 y 200 vamos a mostrar la letra de numero mas bajo
+// el promedio de todos los numero que se ingresaron despoues de la vocal
+// la letra del maximo
+
+	var letra;
+	var numero;
+	var interaciones=0;
+	var respuesta="si";
+	var promedio;
+	var numeroVocal=0;
+	var contarVocal=0;
+	var promedio;
+	var numMin;
+	var letraMin;
+	var numMax;
+	var letraMax;
+
+	while (respuesta!='no')
+	{
+		interaciones++;
+		letra=prompt("Ingrese una letra");
+		while (!(isNaN(letra)))
+		
+		{
+			letra=prompt("Ingrese una letra");
+		}
+		numero=prompt("Ingrese un número")
+		numero=parseInt(numero);
+		while (numero>200 || numero<-200 || isNaN(numero))
+		{
+			numero=prompt("Ingrese un número entre 200 y -200")
+			numero=parseInt(numero);
+		}
+		if (interaciones==1)
+		{
+			numMin=numero;
+			letraMin=letra;
+			numMax=numero;
+			letraMax=letra;
+
+		}
+		if (numMin<numero)
+		{
+			numMin=numero;
+			letraMin=letra;
+		}
+		if (numMax>numero)
+		{
+			numMax=numero;
+			letraMax=letra
+		}
+		switch (letra)
+			{
+				case "a":
+				case "e":
+				case "i":
+				case "o":
+				case "u":
+					numeroVocal++;
+					contarVocal=contarVocal+numero;
+					break;
+				default:
+					break;		
+			}
+
+		respuesta=prompt("Ingrese no para salir");
+	}
+
+		promedio=contarVocal/numeroVocal;
+
+		document.write("La letra del número mínimo es "+letraMin+"<br>La letra del número máximo es "+letraMax+"<br>El promedio de los número con vocal es "+promedio);
+}
+
+
+
+
+
 	
 /*Realizar el algoritmo que permita el ingreso por prompt de las notas (validar entre 0 y 10) y el sexo (validar el sexo “f” o “m”)
  de 100 alumnos, informar por alert: a) el promedio de las notas totales. b) la nota más baja. 
-c) la cantidad de varones que su nota haya sido mayor o igual a 6.*/
+c) la cantidad de varones que su nota haya sido mayor o igual a 6.
 
 
 
