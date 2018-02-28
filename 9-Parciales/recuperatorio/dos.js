@@ -1,12 +1,13 @@
 function Mostrar()
 {
-  var importe;
-  var final;
+	var importe;
+	var rebaja;
+	var final;
 
-  importe=prompt("ingrese un importe");
+	importe=prompt("Ingrese importe");
 
-  final=importe*0.75;
+	rebaja=importe*0.25;
+	final=importe-rebaja;
 
-  document.getElementById('importeFinal').value=final
-
+	document.getElementById('importeFinal').value=final+"$";
 }

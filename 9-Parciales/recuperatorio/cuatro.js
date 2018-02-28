@@ -4,6 +4,50 @@ function Mostrar()
 	var numeroDos;
 	var suma;
 
+	numeroUno=prompt("Ingrese un número");
+	numeroDos=prompt("Ingrese otro número");
+
+	numeroUno=parseInt(numeroUno);
+	numeroDos=parseInt(numeroDos);
+
+	suma=numeroUno+numeroDos;
+
+	if (suma==0)
+	{
+		document.write("El resultado de su suma es 0");
+	}
+	else
+	{
+		if (suma>0)
+		{
+			document.write("El resultado de su suma es positivo: "+suma);
+		}
+		else
+		{
+			document.write("El resultado de su suma es negativo: "+suma);
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*var numeroUno;
+	var numeroDos;
+	var suma;
+
 	numeroUno=prompt("Ingrese número uno:");
 	numeroDos=prompt("Ingrese número dos");
 
@@ -12,7 +56,7 @@ function Mostrar()
 
 	suma=numeroUno+numeroDos;
 
-	/*if (suma>0)
+	if (suma>0)
 	{
 		alert("Positivo");
 		if (suma==0)
@@ -23,7 +67,7 @@ function Mostrar()
 		{
 			alert("negativo");
 		}
-	}*/
+	}
 
 	if (suma<=-1)
 	{
@@ -37,7 +81,7 @@ function Mostrar()
 		}
 		else
 		{
-			alert("cero");/* no funciona :C*/
+			alert("cero"); no funciona :C
 		}
-	}
+	}*/
 }

@@ -1,12 +1,12 @@
 
 function Mostrar()
 {
-	var base;
-	var resultado;
+	var base
+	var superficie
 
 	base=document.getElementById('laBase').value;
 
-	resultado=base*base;
+	superficie=base*base;
 
-	alert("La superficie es de "+resultado+" cemtímetros");
+	alert("La superficie del cuadrado es de "+superficie+" Cm.");
 }
