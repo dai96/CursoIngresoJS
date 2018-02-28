@@ -2,7 +2,7 @@
 function Mostrar()
 
 {
-	alert("Funciona 4-if");
+	//alert("Funciona 4-if");
 	
 	var numeroUno;
 	var	numeroDos;

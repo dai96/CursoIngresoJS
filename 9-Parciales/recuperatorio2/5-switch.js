@@ -2,7 +2,7 @@
 function Mostrar()
 
 {
-	alert("Funciona 5-Switch");
+	//alert("Funciona 5-Switch");
 
 	var mes;
 

@@ -4,17 +4,20 @@ function Mostrar()
 	var ancho;
 	var largo;
 	var perimetro;
-	var alambre;
+	var final;
 
-	ancho=document.getElementById('ancho').value;
+	/*ancho=document.getElementById('ancho').value;
 	largo=document.getElementById('largo').value;
+*/
+	ancho=prompt("ancho");
+	largo=prompt("largo");
 
-	perimetro=ancho*2+largo*2;
-	alambre=perimetro*6;
+	ancho=parseInt(ancho);
+	largo=parseInt(largo);
 
+	perimetro=(ancho*2)+(largo*2);
+	final=perimetro*6;
 
-
-	alert("Necesitás "+alambre+" metros de alambre.");
-	
+	alert("Necesita "+final+" metros");
 }
 

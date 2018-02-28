@@ -1,16 +1,17 @@
 //Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
 function Mostrar()
 {
-	var importe
-	var precio
+	var importe;
+	var iva;
+	var importeFinal;
 
-	importe=prompt("importe");
-
-	precio=importe*1.21;
-
-	document.getElementById('importe').value=precio
+	importe=prompt("Ingrese importe");
+	importe=parseInt(importe);
 
 
-	
+	iva=importe*0.21;
+	importeFinal=iva+importe;
+
+	document.getElementById('importe').value=(importeFinal+"$");
 }
 
