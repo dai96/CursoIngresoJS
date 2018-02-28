@@ -9,5 +9,59 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
  */
 function ComenzarIngreso () 
 {
- 
+ 	var edad;
+ 	var sexo;
+ 	var estadoCivil;
+ 	var sueldo;
+ 	var legajo;
+ 	var nacionalidad;
+
+ 	edad=prompt("Ingrese su edad");
+ 	edad=parseInt(edad);
+ 	while (edad<18 || edad>90 || isNaN(edad))
+ 		{
+ 			edad=prompt("Ingrese válida entre 18 y 90");
+ 			edad=parseInt(edad);
+ 		}
+ 	sexo=prompt("Ingrese F o M segùn su sexo");
+ 	while (sexo!="f" && sexo!="m" || (!(isNaN(sexo))) )
+	{
+		sexo=prompt("Pôrfavor F o M segùn su sexo");
+	}	
+	estadoCivil=prompt("Ingrese 1-soltero 2-casado 3-divociado 4-viudo");
+	estadoCivil=parseInt(estadoCivil);
+	while (estadoCivil>4 || isNaN(estadoCivil))
+	{
+		estadoCivil=prompt("Ingrese 1-soltero 2-casado 3-divociado 4-viudo");
+		estadoCivil=parseInt(estadoCivil);
+	}
+	sueldo=prompt("Ingrese su sueldo bruto");
+	sueldo=parseInt(sueldo);
+	while (sueldo<8000 || isNaN(sueldo))
+		{
+			sueldo=prompt("Ingrese su sueldo bruto");
+			sueldo=parseInt(sueldo);
+
+		}
+	legajo=prompt("Ingrese su número de legajo");
+	legajo=parseInt(legajo);
+	while (legajo>9999 || isNaN(legajo) ||legajo<1000 )
+	{
+		legajo=prompt("Ingrese su número de legajo");
+		legajo=parseInt(legajo);
+	}	
+	nacionalidad=prompt("Ingrese A-argentinos, E-extranjeros y N-nacionalizados");
+	while(nacionalidad!="A" && nacionalidad!="E" && nacionalidad!="N" || (!(isNaN(nacionalidad))))
+	{
+			nacionalidad=prompt("Ingrese A-argentinos, E-extranjeros y N-nacionalizados");
+	}
+
+	document.getElementById('Edad').value=edad;
+	document.getElementById('Sexo').value=sexo;
+	document.getElementById('EstadoCivil').value=estadoCivil;
+	document.getElementById('Sueldo').value=(sueldo+"$");
+	document.getElementById('Legajo').value=legajo;
+	document.getElementById('Nacionalidad').value=nacionalidad;
+
 }
+
